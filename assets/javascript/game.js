@@ -5,6 +5,8 @@ var word = myAnimals[Math.floor(Math.random() * myAnimals.length)];
  
 
 
+$("#root").html(word)
+
 
  var answerList = [];
  for (var i = 0; i < word.length; i++) {
@@ -37,7 +39,7 @@ var word = myAnimals[Math.floor(Math.random() * myAnimals.length)];
  }
 }
 
-alert(answerArray.join(" "));
+alert(answerList.join(" "));
 alert("Awesome! Great Job! " + word);
 
 
