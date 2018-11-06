@@ -49,5 +49,5 @@ var game = {
     game.guess(letter);
   };
 
-  location.reload(); 
+
   
