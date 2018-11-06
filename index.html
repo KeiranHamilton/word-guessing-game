@@ -8,25 +8,43 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <link rel="stylesheet" type="text/css" href="assets\css\style.css">
-  
+  <style> body {background-color: gray;}</style>
 </head>
 <body>
+  
+ 
   <div class="jumbotron">
     <h1><strong>Guess that Animal!</strong></h1> 
-    <p><strong>Have Fun Guessing Animal Names!</strong></p> 
+    <p><strong>Let's Have Fun Guessing Animal Names!</strong></p> 
   </div>
-  <hr>
+
   <div class="container">
-    <h1 id="root"></h1>
-  </div>
+      <div class="row">
+        <div>
+          <h2>Press Any Key To Get Started!</h2>
+          <p id="right"></p>
+          <p>
+            <span id="remain">12 Guesses Remaining</span>
+          </p>
+          <p id="wrong">Letters Guessed Wrong<br></p>
+        </div>
+      </div>
+    </div>
 
-  <div class="row">
-    <div class= "col-md-12">
+    <style type="text/css">
+      #right {
+        letter-spacing: 3px;
+      }
+    </style>
+  
+  <div class=row>
+      <div class="col-md-12">
+        <footer><div class="container">
+          
+          
+    </footer>
  
- <p id="remainingLetters">
-   <p></p>
-
-  </div>
+  
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
