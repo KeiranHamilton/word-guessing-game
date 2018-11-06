@@ -20,9 +20,9 @@ h2 { background: gray;
 color: white;}
 
 #wrong {font-size: 25px;
-color: white;}
+color:white}
 #remain {font-size: 20px;
-color: white;}
+color:red;}
 
 footer {background: url("http://cdn.wallpapersafari.com/74/81/39f8Nh.jpg");
       padding: 70px;}

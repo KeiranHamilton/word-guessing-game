@@ -1,14 +1,15 @@
 
-var words = ["giraffe", "kangaroo", "elephant", "monkey", "sloth", "panther", "hippopotamus"
+var animalList = ["giraffe", "kangaroo", "elephant", "monkey", "sloth", "panther", "hippopotamus"
 ];
 var game = {
     guessed: [],
     left: 12,
     start: function() {
       this.complete = false;
-      this.word = words[Math.floor(Math.random() * words.length)];
+      
+      this.word = animalList[Math.floor(Math.random() * animalList.length)];
       this.$right = document.getElementById('right');
-      this.$wrong = document.getElementById('wrong');
+        this.$wrong = document.getElementById('wrong');
       this.$remain = document.getElementById('remain');
       this.$right.innerHTML = '_'.repeat(this.word.length);
     },
@@ -47,3 +48,6 @@ var game = {
     var letter = String.fromCharCode(event.keyCode).toLowerCase();
     game.guess(letter);
   };
+
+  location.reload(); 
+  
